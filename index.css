@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'roboto condensed';
+}
+body{
+    height: 100%;
+}
+.conteneur{
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px;
+    transform: translateY(0);
+    animation: descendre0 1.5s infinite;
+}
+ @keyframes descendre0{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(1.8vh);
+        }
+   
+ }
+
+.conteneur .one{
+    color: orange;
+    
+}
+.conteneur .two span{
+    color: orange;
+}
+.conteneur .three span{
+    color: orange;
+}
+.conteneur2{
+    padding: 10PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+.conteneur2 .five:hover{
+    background: #fff;
+    color: #000;
+}
+.conteneur2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.conteneur2 .six span{
+    color: orange;
+}
+/*HEADER*/
+header
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(photos/IMG-20241029-WA0028.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*ACCUEIL*/
+
+.navbar{
+    padding: 18px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: orange;
+}
+ul{
+    list-style: none;
+   display: flex;
+   
+}
+ul li a{
+    padding: 10px 100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: 0.6 ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+ 
+
+.ten h1{
+    font-size: 45px;
+    padding: 250px;
+    color: white;
+    text-align: center;
+    font-family: bold;
+}
+.ten p{
+    font-size: 40px;
+    margin: 20px;
+    color: orange;
+    font-family: bold;
+   
+}
+.ten .bouton{
+    cursor: pointer;
+}
+.ten .paragraphe{
+    margin: 20px 10px;
+    
+}
+.ten .bouton{
+    color: #000;
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 12px;
+    font-family: bold;
+}
+.ten .bouton:hover{
+    color: #fff;
+    background: orange;
+    border-radius: 12px;
+    
+}
+
+/* A PROPOS*/
+
+#apropos{
+
+    background: linear-gradient(rgba(249, 247, 247, 0.5), rgba(188, 185, 185, 0.5)), url(photos/IMG-20241029-WA0030.jpg) ;
+    border-radius: 50px;
+}
+#apropos h1{
+    font-weight: bold;
+    text-align: center; 
+    padding: 10px 0 10px 0;
+    margin-bottom: 100px;
+    font-size: 45px;
+}
+.onze{
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.onze span{
+    color: orange;
+}
+.douze{
+    margin: 15px;
+}
+.treize{
+    margin: 15px;
+}
+.quatorze{
+    margin: 15px;
+}  
+.quinze{
+    margin: 15px;
+}
+.onze .seize{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* BOUTIQUE*/
+
+.seventeen{
+    background: url(photos/IMG-20241029-WA0032.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.seventeen .eighteen{
+    font-size: 50px;
+    font-family: bold;
+    align-items: center;
+    color: white;
+}
+.eighteen{
+    text-align: center;
+}
+.seventeen .nineteen span{
+    margin: 25px;
+    padding: 150px;
+    font-family: bold;
+    color: white;
+    font-size: 26px;
+
+}
+
+.vingt{
+    float: right;
+}
+.seventeen .vingt-un{
+    font-size: 30px;
+    font-family: bold;
+}
+.seventeen .vingt-un {
+    margin: 10px;
+    padding: 10px;
+    color: orange;
+    font-size: 30px;
+    font-family: bold;
+}
+
+.seventeen .vingt-deux{
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 15px 20px;
+    padding: 3px;
+    font-family: bold;
+}
+.seventeen .vingt-deux:hover{
+    color: #fff;
+    background: orange;
+}
+
+/*animation de la fleche*/
+
+.seventeen .fleche{
+    padding: 10px;
+    margin: 20px;
+    font-size: 100px;
+    color: rgb(207, 233, 169);
+    transform: translateY(0);
+    animation: descendre 1s infinite;
+}
+ @keyframes descendre{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(5vh);
+        }
+ }
+
+.seventeen button{
+    color: black;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: bold;
+    margin: 10px;
+    padding: 7px;
+}
+.seventeen button:hover{
+    background-color: orange;
+    color: white;
+}
+
+/*vetements homme et femme*/
+
+.section_produits{
+    padding: 40px 5%;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 70px;
+    
+}
+.produits .carte{
+    width: 300px;
+    background: #dfdede;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10PX;
+    margin-bottom: 20px;
+}
+.produits .carte img{
+    height: 350px;
+    width: 100%;
+}
+.produits .carte .desc{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10 30px;
+
+}
+.produits .carte .titre{
+    padding: 5px 20px;
+    opacity: 0,8;
+    border-radius: 10PX;
+
+}
+.produits .carte .titre span{
+    color: orange;
+}
+.produits .carte .titre em{
+    color:  blue;
+}
+
+
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.produits .carte .prix{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+.produits .carte .achat{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 18x;
+    margin: 10px;
+    border-radius: 12px;
+    font-family: bold;
+}
+.produits .carte .box .achat:hover{
+    cursor: pointer;
+    background: orange;
+    color: white;
+
+}
+
+/*contact*/
+#contact{
+    text-align: center;
+    padding: 60px;
+    font-size: 20px;
+}
+#contact p span{
+    color: orange;
+}
+#contact h3{
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom:  1px solid orange;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+form{
+    margin: 60px 0 20px 0;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #777;
+}
+input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+}
+.button-3{
+    color: #2c2b2b;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px;
+    background-color: white;
+    border-radius: 5px;
+}
+.button-3:hover{
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+ /*FOOTER*/
+
+ footer{
+    background-color: rgb(37, 35, 35);
+    height: 10vh;
+ }
+ footer p{
+    color: white;
+    text-align: center;
+   padding: 26px;
+ }
+ footer p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+ }
+ footer p a span{
+    color:  orange;
+ }
+
